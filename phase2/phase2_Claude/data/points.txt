@@ -1,0 +1,8 @@
+# Sample points file – Voronoi Diagram Phase 2
+# Format: x,y  (one point per line, comma separator)
+# Lines starting with '#' are treated as comments and ignored.
+
+2,4
+5.3,4.5
+18,29
+12.5,23.7
