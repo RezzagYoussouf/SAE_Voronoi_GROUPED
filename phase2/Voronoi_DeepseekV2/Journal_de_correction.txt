@@ -1,0 +1,12 @@
+Journal de correction : 
+
+Après le premier prompt voici la liste des éléments à corriger : 
+
+- Problème d'interpréteur
+- Tracer les droites pour identifier les cellules
+- Ajouter une zone de couleurs pour indiquer à qui appartient la zone en question
+- Ajouter une légende sur le diagramme
+- Corrigez les tests qui n'étaient pas tous bons
+- Augmenter la couverture de code
+- Modifier le nom des tests pour respecter les bonnes pratiques
+- Ajouter l'exportation du résultat dans un dossier à part
