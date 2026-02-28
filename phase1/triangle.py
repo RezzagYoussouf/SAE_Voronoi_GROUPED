@@ -13,8 +13,8 @@ class Triangle():
     def calculer_centre_circonscrit(self):
         # Calculer les médiatrices des côtés du triangle
         x_mediatrice_AB, y_mediatrice_AB = self._segment1.definir_mediatrice(self._segment1._PointA, self._segment1._PointB)
-        x_mediatrice_BC, y_mediatrice_BC = self._segment2.definir_mediatrice(self._segment2._PointB, self._segment2._PointC)
-        x_mediatrice_AC, y_mediatrice_AC = self._segment3.definir_mediatrice(self._segment3._PointA, self._segment3._PointC)
+        x_mediatrice_BC, y_mediatrice_BC = self._segment2.definir_mediatrice(self._segment2._PointA, self._segment2._PointB)
+        x_mediatrice_AC, y_mediatrice_AC = self._segment3.definir_mediatrice(self._segment3._PointA, self._segment3._PointB)
 
         # Calculer les pentes des médiatrices
         pente_perpendiculaire_AB = self._segment1.calculer_pente_perpendiculaire(self._segment1._PointA, self._segment1._PointB)
