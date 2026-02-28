@@ -1,4 +1,5 @@
-import main from Point
+from math import sqrt
+from main import Point
 
 class Segment:
 
@@ -28,4 +29,7 @@ class Segment:
         pente_perpendiculaire = -dx / dy  # = -1/pente
         return pente_perpendiculaire    
     
+    def segment_est_egal(self, Point1, Point2):
+        return Point1._x == Point2._x and Point1._y == Point2._y
         
+
