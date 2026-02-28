@@ -139,16 +139,28 @@ Ouvrez ensuite `htmlcov/index.html` dans votre navigateur.
 
 ### Checklist finale
 
-✅ Lecture fichier points
-✅ Calcul Voronoï
-✅ Visualisation (cellules colorées, points, étiquettes, zoom/pan)
-✅ Export SVG
-✅ Export image (PNG)
-✅ TDD respecté (tests écrits en parallèle)
-✅ AAA respecté
-✅ Nommage Should/Given/When respecté
-✅ SOLID appliqué
-✅ KISS respecté
-✅ Anti-patterns évités
-✅ Couverture >97% (commande fournie)
+✅ Lecture fichier points  
+
+✅ Calcul Voronoï  
+
+✅ Visualisation (cellules colorées, points, étiquettes, zoom/pan)  
+
+✅ Export SVG  
+
+✅ Export image (PNG)  
+
+✅ TDD respecté (tests écrits en parallèle)  
+
+✅ AAA respecté  
+
+✅ Nommage Should/Given/When respecté  
+
+✅ SOLID appliqué  
+
+✅ KISS respecté  
+
+✅ Anti-patterns évités  
+
+✅ Couverture >97% (commande fournie)  
+
 ✅ Instructions complètes
