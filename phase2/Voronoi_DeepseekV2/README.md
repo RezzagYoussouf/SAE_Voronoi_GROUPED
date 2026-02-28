@@ -39,11 +39,6 @@ Application Python en ligne de commande (CLI) qui :
 * **Sur Windows (PowerShell) :** `.\venv\Scripts\Activate`
 * **Sur macOS/Linux :** `source venv/bin/activate`
 
-4. **Installer les dépendances :**
-
-```bash
-pip install -r requirements.txt
-```
 
 4. **Installer les dépendances :**
 
