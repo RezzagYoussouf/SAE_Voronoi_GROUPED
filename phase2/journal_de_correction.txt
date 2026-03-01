@@ -1,0 +1,12 @@
+Journal de correction
+
+Après le premier prompt, voici la liste des éléments à corriger :
+
+- Problème d’import / packaging : ModuleNotFoundError: voronoi_app lors de l’exécution des tests (projet en src/ non installé correctement).
+- Ajouter/ajuster la configuration du projet (pyproject.toml) et installer le package en mode editable (pip install -e .) pour que les imports fonctionnent.
+- Corriger un cas limite du calcul Voronoï : SciPy/Qhull exige au moins 4 points (“need 4 points”), donc renvoyer une erreur claire si le fichier contient moins de 4 points.
+- Adapter les tests concernés (tests qui utilisaient 2 points) et ajouter un test dédié pour le cas “moins de 4 points”.
+- Corriger l’option CLI --bounds dans les tests (utiliser --bounds=... pour éviter que l’argument soit interprété comme une option).
+- Vérifier et améliorer la couverture de code avec pytest --cov en ajoutant des tests pour couvrir des branches manquantes (ex : erreurs I/O, branches rarement utilisées).
+- Mettre à jour le README avec les commandes : installation, exécution, tests et rapport de couverture.
+- Organiser l’export des fichiers (SVG/PNG) dans un dossier de sortie séparé (ex : output/).
