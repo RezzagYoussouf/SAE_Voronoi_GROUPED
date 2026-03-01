@@ -170,3 +170,5 @@ CHECKLIST FINALE (À REMPLIR À LA FIN)
 
 3 - pour la sortie pilote ajoute des couleurs pour chaque point afin de les différencier ex point A en bleu...
 
+FIN DES PROMPTS
+
