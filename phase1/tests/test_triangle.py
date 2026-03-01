@@ -1,7 +1,7 @@
 import pytest
-from phase1.point import Point
-from phase1.segment import Segment
-from phase1.triangle import Triangle
+from ..point import Point
+from ..segment import Segment
+from ..triangle import Triangle
 
 def test_should_return_correct_when_triangle_is_valid():
     #arrange
