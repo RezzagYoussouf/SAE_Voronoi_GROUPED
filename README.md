@@ -96,11 +96,36 @@ But : analyser les risques liés à l’usage d’IA génératives en développe
 
 ---
 
-## Comment exécuter une version
+## Installation et exécution
 
-Chaque phase/version peut avoir ses propres instructions. En général :
-- les instructions d’exécution et d’installation se trouvent dans le `README.md` de la phase concernée,
-- la phase 2 contient aussi les commandes de tests et de couverture si elles sont demandées.
+### 1. Créer un environnement virtuel
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 2. Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Lancer les tests
+
+Se placer **à la racine du projet** puis exécuter :
+
+```bash
+pytest phase1/tests/ --cov=phase1 --cov-report=term-missing
+```
+
+### 4. Lancer le tracé du diagramme de Voronoï
+
+Se placer **à la racine du projet** puis exécuter :
+
+```bash
+python -m phase1.tracer_voronoi
+```
 
 ---
 
