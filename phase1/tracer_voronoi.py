@@ -13,7 +13,7 @@ for triangle in diagramme_voronoi.liste_triangles:
 triangle_valide = diagramme_voronoi.triangle_valide(diagramme_voronoi.liste_triangles[0], diagramme_voronoi.liste_points[0], diagramme_voronoi.liste_points[1], diagramme_voronoi.liste_points[2])
 print("Le triangle est-il valide ?", triangle_valide)
 
-fig = plt.figure(figsize=(8, 8))
+fig = plt.figure(figsize=(6, 6))
 
 #lie les cercles circonscrits des triangles qui on un segment commun
 for i in range(len(diagramme_voronoi.liste_triangles)):
@@ -50,7 +50,7 @@ for triangle in diagramme_voronoi.liste_triangles:
 
 for i, point in enumerate(diagramme_voronoi.liste_points):
     plt.scatter(point._x, point._y, color="grey", label=f"P{i+1} ({point._x}, {point._y})")
-    plt.annotate(f"P{i+1}", (point._x, point._y), textcoords="offset points", xytext=(5, 5), fontsize=9)
+    plt.annotate(f"P{i+1}", (point._x, point._y), textcoords="offset points", xytext=(-3, 8), fontsize=9)
 
 plt.title("Diagramme de Voronoï")
 plt.xlim(-5, 25)
