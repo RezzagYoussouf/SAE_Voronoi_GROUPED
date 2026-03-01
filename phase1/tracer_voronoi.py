@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from diagramme_voronoi import Diagramme_Voronoi
+from .diagramme_voronoi import Diagramme_Voronoi
 
 diagramme_voronoi = Diagramme_Voronoi()
 diagramme_voronoi.parcourir_donnees() 
