@@ -1,5 +1,5 @@
-from point import Point
-from segment import Segment
+from phase1.point import Point
+from phase1.segment import Segment
 
 class Triangle():
 

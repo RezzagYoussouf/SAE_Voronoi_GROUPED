@@ -1,5 +1,5 @@
 from math import sqrt
-from point import Point
+from phase1.point import Point
 
 class Segment:
 
