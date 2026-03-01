@@ -1,4 +1,4 @@
-from main import Point
+from point import Point
 from triangle import Triangle
 from segment import Segment
 from itertools import combinations

@@ -1,5 +1,5 @@
 from math import sqrt
-from main import Point
+from point import Point
 
 class Segment:
 
@@ -30,6 +30,11 @@ class Segment:
         return pente_perpendiculaire    
     
     def segment_est_egal(self, Point1, Point2):
-        return Point1._x == Point2._x and Point1._y == Point2._y
-        
+        return Point1._x == Point2._x and Point1._y == Point2._y #a_changer?
+    
+    def est_meme_segment(self, autre_segment):
+        return (self.segment_est_egal(self._PointA, autre_segment._PointA) and self.segment_est_egal(self._PointB, autre_segment._PointB)) or (self.segment_est_egal(self._PointA, autre_segment._PointB) and self.segment_est_egal(self._PointB, autre_segment._PointA))
+
+    def __str__(self):
+        return f"Segment entre ({self._PointA._x}, {self._PointA._y}) et ({self._PointB._x}, {self._PointB._y})"
 

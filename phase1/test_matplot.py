@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from main import Point
+from point import Point
 
 fig = plt.figure()
 p = Point(0, 0, "Point1")
