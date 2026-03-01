@@ -1,6 +1,6 @@
 import pytest  
-from phase1.point import Point
-from phase1.segment import Segment
+from ..point import Point
+from ..segment import Segment
 
 #Méthode AAA -> structure en  Arrange, Act, Assert
 #Méthode should_return_correct_when...() : test autodescriptif

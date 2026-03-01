@@ -1,5 +1,5 @@
 import pytest  
-from phase1.point import Point 
+from ..point import Point 
 #Méthode AAA ->structure en  Arrange, Act, Assert
 #Méthode should_return_correct_when() ->  test autodescriptif
 
@@ -19,10 +19,6 @@ def test_should_return_correct_when_y_is_valid():
     y = p1.y
     #assert
     assert y == 3
-
-
-import pytest  
-from phase1.point import Point 
 
 
 def test_should_return_none_when_x_is_missing():
