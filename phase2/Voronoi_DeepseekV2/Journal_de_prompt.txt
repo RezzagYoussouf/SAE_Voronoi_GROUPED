@@ -1,0 +1,208 @@
+Prompt de base : 
+
+Tu es une IA génératrice de code. Ta mission est de produire une application complète correspondant au cahier des charges suivant (contexte : projet de groupe BUT3 Informatique, spécialité Développement d’Applications, SAÉ S6 – Diagrammes de Voronoï). Ce travail correspond à la phase 2 du projet : il doit être entièrement généré par IA afin de comparer la production IA avec une version réalisée manuellement en phase 1.
+
+OBJECTIF FONCTIONNEL (OBLIGATOIRE)
+
+Développer une application qui :
+
+1) Lit un fichier texte contenant une liste de points 2D, une paire de coordonnées par ligne, exemple :
+   2,4
+   5.3,4.5
+   18,29
+   12.5,23.7
+
+   - Le séparateur est la virgule.
+   - Les espaces éventuels doivent être gérés.
+   - Gérer proprement les erreurs : ligne vide, format invalide, valeurs non numériques, doublons, etc.
+   - Messages d’erreur clairs et exploitables.
+
+2) Calcule le diagramme de Voronoï correspondant à ces points.
+
+3) Permet une visualisation conviviale :
+   - Affichage des points et des cellules de Voronoï.
+   - Rendu clair et lisible.
+   - Zoom / pan si raisonnablement faisable, sinon rendu statique propre avec axes.
+
+4) Permet l’export :
+   - Export SVG obligatoire.
+   - Export image (PNG ou équivalent) si possible.
+
+5) Fournit une interface :
+   - Soit CLI bien conçue avec options (input, output, format, etc.),
+   - Soit GUI (desktop ou web).
+   - Justifier le choix.
+   - Documenter précisément l’utilisation.
+
+------------------------------------------------------------
+CONTRAINTES DE QUALITÉ (OBLIGATOIRES)
+------------------------------------------------------------
+
+Le projet doit impérativement respecter :
+
+1) TDD (Test-Driven Development)
+   - La conception doit être présentée comme ayant été faite en TDD.
+
+2) Pattern Arrange / Act / Assert (AAA)
+   - Tous les tests doivent respecter explicitement la structure AAA.
+
+3) Convention de nommage des tests (OBLIGATOIRE) :
+   Should_<ExpectedResult>_Given_<Context>_When_<Action>
+   (format exact, en anglais)
+
+4) Couverture de code quasi 100 %
+   - Viser 95–100 %.
+   - Fournir la commande pour générer le rapport de couverture.
+   - Expliquer toute partie difficile à couvrir.
+
+5) Principes SOLID (appliqués clairement dans l’architecture).
+
+6) Principe KISS (pas de sur-ingénierie inutile).
+
+7) Clean Code :
+   - Nommage explicite
+   - Fonctions courtes
+   - Séparation claire des responsabilités
+   - Pas de duplication inutile
+   - Gestion robuste des erreurs
+   - Constantes nommées (pas de magic numbers)
+
+8) Anti-patterns explicitement évités :
+   - God class / God method
+   - Magic numbers
+   - Code spaghetti
+   - Dépendances circulaires
+   - Duplication abusive
+
+9) Design patterns :
+   - Utiliser uniquement si pertinent (ex : Strategy, Factory, Adapter).
+   - Expliquer brièvement pourquoi ils sont utilisés.
+
+------------------------------------------------------------
+CHOIX TECHNOLOGIQUES
+------------------------------------------------------------
+
+- Le langage et les bibliothèques sont libres.
+- Les choix doivent être justifiés selon :
+  - robustesse
+  - testabilité
+  - maintenabilité
+  - simplicité (KISS)
+  - facilité d’exécution sur une machine standard d’étudiant
+- Le projet doit être exécutable facilement avec des instructions claires.
+
+------------------------------------------------------------
+LIVRABLES ATTENDUS DANS TA RÉPONSE
+------------------------------------------------------------
+
+Tu dois fournir une réponse structurée contenant :
+
+A) Résumé
+   - Présentation synthétique de la solution.
+
+B) Architecture
+   - Arborescence complète du projet.
+   - Description des responsabilités des modules.
+   - Mise en évidence de SOLID.
+
+C) Instructions d’installation et d’exécution
+   - Prérequis
+   - Installation des dépendances
+   - Commande pour lancer l’application
+   - Commande pour lancer les tests
+   - Commande pour générer la couverture
+
+D) Code source COMPLET
+   - Tous les fichiers nécessaires.
+   - Pas seulement des extraits.
+   - Pas de TODO bloquant.
+
+E) Tests
+   - Tests unitaires complets.
+   - Respect strict AAA.
+   - Nommage Should_Expected_Given_Context_When_Action.
+   - Tests de :
+        - parsing fichier (cas valides + erreurs)
+        - calcul Voronoï (cas simples + robustesse)
+        - export SVG (validation minimale du contenu)
+        - composants métier isolés
+        - intégration légère si pertinent
+
+F) Qualité et maintenance
+   - Explication de l’application de SOLID.
+   - Comment les anti-patterns sont évités.
+   - Limites connues.
+   - Pistes d’amélioration.
+
+------------------------------------------------------------
+RÈGLES IMPORTANTES
+------------------------------------------------------------
+
+- Ne pas fournir une ébauche.
+- Ne pas omettre des parties essentielles.
+- Ne pas supposer des fichiers externes non fournis.
+- Tout doit être inclus dans la réponse.
+- La solution doit être cohérente, exécutable et professionnelle.
+
+------------------------------------------------------------
+CHECKLIST FINALE (À REMPLIR À LA FIN)
+------------------------------------------------------------
+
+[ ] Lecture fichier points
+[ ] Calcul Voronoï
+[ ] Visualisation
+[ ] Export SVG
+[ ] Export image (si réalisé)
+[ ] TDD respecté
+[ ] AAA respecté
+[ ] Nommage Should/Given/When respecté
+[ ] SOLID appliqué
+[ ] KISS respecté
+[ ] Anti-patterns évités
+[ ] Couverture ~100 % + commande fournie
+[ ] Instructions complètes
+
+
+Prompt n°2 : 
+J'ai actuellement un problème avec mon interpréteur Python je programme actuellement sur VS Code et j'utilise également son PowerShell et mon environnement s'appelle "voronoi_env"
+
+Prompt n°3 : 
+Les points sont bien présents au bon endroits mais il manque les cellules les droites tracés
+
+Prompt n°4 : 
+Voici le résultat obtenu pourquoi au bout d'un moment tu utilise des droites pointillé et l'autre on a des droites pleines ( avec pièce jointe du résultat )
+
+Prompt n°5 : 
+Ok donc pour le segment AB la droite en pointillé indique que la zone de voronoi s'étends encore au dessus de la droite pleine c'est ça ?
+
+Prompt n°6 : 
+Peut tu apporter plus de précision dans le diagramme avec des zone de couleurs pour indiqué la cellule de A et cellule de B fait de même pour les autres points
+
+Prompt n°7 : 
+Ajoute également dans la légende à quoi correspondent les zones de couleurs
+
+Prompt n°8 : 
+On est d'accord que chaque zone colorée corresponds à la zone de voronoi du points en question par exemple la zone bleu corresponds à la zone de voronoi de A ? c'est bien sa
+
+Prompt n°9 : 
+On a pas vérifier si on arrivait à passer tous les test vérifions cela tout de suite ensemble
+
+Prompt n°10 :
+Voici ce que me retourne le terminal concernant les test : ( Envoie de l'erreur du terminal )
+
+Prompt n°11 : 
+Ok j'ai pu réglé le problème peut tu maintenant vérifier que tous les tests ont été réaliser ou il manque des tests à effectuer pour couvrir une très bonne couverture de code
+
+Prompt n°12 : 
+Tu trouveras en pièce jointe la couverture de code actuelle : (Screen de la couverture de code)
+
+Prompt n°13 : 
+3 tests ne sont pas passé voici le retour du terminal : ( Envoie de l'erreur ) 
+
+Prompt n°14 : 
+Modifie le README pour afficher toutes les commandes à taper pour tester ce projet et les commandes à taper pour effectuer les tests et vérifier la couverture de code s'il te plait
+
+Prompt n°15 : 
+D'ailleurs je viens de voir mais tu n'as pas fait le fait de pouvoir exporter le résultat sous forme de fichiers SVG ou image je voudrais que le fichier SVG ou l'image soit stocker dans un dossier apart du nom de output.
+
+
